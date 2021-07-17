@@ -1,0 +1,52 @@
+<form [formGroup]="usuarioForm">
+    <div class="modal-header">
+        <h5 class="modal-title" id="modal-basic-title">Cadastro de Usuario</h5>
+        <button type="button" class="close" aria-label="Close" (click)="dismiss()">
+        <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+    <div class="modal-body">
+
+        <div class="row">
+            <div class="col">
+                <label>Nome</label>
+                <input type="text" class="form-control" formControlName="nome">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>Sobrenome</label>
+                <input type="text" class="form-control" formControlName="sobrenome">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <label>Data de Nasc.</label>
+                <div class="input-group">
+                    <input class="form-control" placeholder="dd-mm-aaaa" name="dp" formControlName="dataNascimento" ngbDatepicker #d="ngbDatepicker">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button"><fa-icon [icon]="calendarIcon"></fa-icon> </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <label>Escolaridade</label>
+                <select class="form-control" formControlName="escolaridadeId">
+                        <option value="">Selecione</option>
+                        <option *ngFor="let item of listarEscolaridade" value="{{item.id}}">{{item.descricao}}</option>
+                    </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label>E-mail</label>
+
+                <input type="text" class="form-control" formControlName="email">
+            </div>
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" [disabled]="!usuarioForm.valid">Salvar <fa-icon [icon]="checkIcon"></fa-icon></button>
+    </div>
+</form>

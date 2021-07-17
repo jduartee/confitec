@@ -1,0 +1,30 @@
+table {
+    margin-top: 15px;
+}
+
+.btn-filtro {
+    margin-top: 30px;
+}
+
+.btn-editar {
+    background-color: #44c767;
+    border-radius: 10px;
+    border: 1px solid #18ab29;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 6px 8px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.btn-editar:hover {
+    background-color: #5cbf2a;
+}
+
+.btn-editar:active {
+    position: relative;
+    top: 1px;
+}

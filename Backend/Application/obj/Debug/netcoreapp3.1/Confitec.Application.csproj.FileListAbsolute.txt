@@ -1,0 +1,9 @@
+C:\Users\Squadra\source\repos\CONFITEC\Application\bin\Debug\netcoreapp3.1\Confitec.Application.deps.json
+C:\Users\Squadra\source\repos\CONFITEC\Application\bin\Debug\netcoreapp3.1\Confitec.Application.dll
+C:\Users\Squadra\source\repos\CONFITEC\Application\bin\Debug\netcoreapp3.1\Confitec.Application.pdb
+C:\Users\Squadra\source\repos\CONFITEC\Application\obj\Debug\netcoreapp3.1\Confitec.Application.csprojAssemblyReference.cache
+C:\Users\Squadra\source\repos\CONFITEC\Application\obj\Debug\netcoreapp3.1\Confitec.Application.AssemblyInfoInputs.cache
+C:\Users\Squadra\source\repos\CONFITEC\Application\obj\Debug\netcoreapp3.1\Confitec.Application.AssemblyInfo.cs
+C:\Users\Squadra\source\repos\CONFITEC\Application\obj\Debug\netcoreapp3.1\Confitec.Application.csproj.CoreCompileInputs.cache
+C:\Users\Squadra\source\repos\CONFITEC\Application\obj\Debug\netcoreapp3.1\Confitec.Application.dll
+C:\Users\Squadra\source\repos\CONFITEC\Application\obj\Debug\netcoreapp3.1\Confitec.Application.pdb
