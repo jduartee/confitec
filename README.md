@@ -25,4 +25,5 @@ App para cadastro simples de usáario
   
 # Requisitos para executar o Projeto - Front
 
-  - executar npm install para baixar as bibliotecas
+  - Executar npm install para baixar as bibliotecas
+  - Verificar o apontamento para api nos arquivo de service
