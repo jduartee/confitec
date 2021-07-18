@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Api\\Confitec.Api.csproj": {}
+    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Api\\Confitec.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Api\\Confitec.Api.csproj": {
+    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Api\\Confitec.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Api\\Confitec.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Api\\Confitec.Api.csproj",
         "projectName": "Confitec.Api",
-        "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Api\\Confitec.Api.csproj",
+        "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Api\\Confitec.Api.csproj",
         "packagesPath": "C:\\Users\\Squadra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Api\\obj\\",
+        "outputPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -31,14 +31,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\Confitec.Application.csproj": {
-                "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\Confitec.Application.csproj"
+              "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\Confitec.Application.csproj": {
+                "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\Confitec.Application.csproj"
               },
-              "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Infrastructure\\Confitec.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Infrastructure\\Confitec.Infrastructure.csproj"
+              "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Infrastructure\\Confitec.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Infrastructure\\Confitec.Infrastructure.csproj"
               },
-              "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Services\\Confitec.Services.csproj": {
-                "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Services\\Confitec.Services.csproj"
+              "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Services\\Confitec.Services.csproj": {
+                "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Services\\Confitec.Services.csproj"
               }
             }
           }
@@ -56,6 +56,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.3, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -106,14 +110,14 @@
         }
       }
     },
-    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\Confitec.Application.csproj": {
+    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\Confitec.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\Confitec.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\Confitec.Application.csproj",
         "projectName": "Confitec.Application",
-        "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\Confitec.Application.csproj",
+        "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\Confitec.Application.csproj",
         "packagesPath": "C:\\Users\\Squadra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\obj\\",
+        "outputPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -177,14 +181,14 @@
         }
       }
     },
-    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Domain\\Confitec.Domain.csproj": {
+    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Domain\\Confitec.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Domain\\Confitec.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Domain\\Confitec.Domain.csproj",
         "projectName": "Confitec.Domain",
-        "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Domain\\Confitec.Domain.csproj",
+        "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Domain\\Confitec.Domain.csproj",
         "packagesPath": "C:\\Users\\Squadra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -234,14 +238,14 @@
         }
       }
     },
-    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Infrastructure\\Confitec.Infrastructure.csproj": {
+    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Infrastructure\\Confitec.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Infrastructure\\Confitec.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Infrastructure\\Confitec.Infrastructure.csproj",
         "projectName": "Confitec.Infrastructure",
-        "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Infrastructure\\Confitec.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Infrastructure\\Confitec.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\Squadra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -261,8 +265,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Domain\\Confitec.Domain.csproj": {
-                "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Domain\\Confitec.Domain.csproj"
+              "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Domain\\Confitec.Domain.csproj": {
+                "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Domain\\Confitec.Domain.csproj"
               }
             }
           }
@@ -319,14 +323,14 @@
         }
       }
     },
-    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Services\\Confitec.Services.csproj": {
+    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Services\\Confitec.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Services\\Confitec.Services.csproj",
+        "projectUniqueName": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Services\\Confitec.Services.csproj",
         "projectName": "Confitec.Services",
-        "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Services\\Confitec.Services.csproj",
+        "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Services\\Confitec.Services.csproj",
         "packagesPath": "C:\\Users\\Squadra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Services\\obj\\",
+        "outputPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -346,11 +350,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\Confitec.Application.csproj": {
-                "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\Confitec.Application.csproj"
+              "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\Confitec.Application.csproj": {
+                "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\Confitec.Application.csproj"
               },
-              "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Infrastructure\\Confitec.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Infrastructure\\Confitec.Infrastructure.csproj"
+              "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Infrastructure\\Confitec.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Infrastructure\\Confitec.Infrastructure.csproj"
               }
             }
           }

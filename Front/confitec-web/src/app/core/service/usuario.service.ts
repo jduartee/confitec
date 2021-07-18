@@ -25,7 +25,7 @@ export class UsuarioService  {
     }
 
     alterar(salvarUsuarioDTO: salvarUsuarioDTO ): Observable<any>{
-        return this.http.put(`${this.baseUrl}Usuario/incluir-usuario/${salvarUsuarioDTO.id}`, salvarUsuarioDTO);
+        return this.http.put(`${this.baseUrl}Usuario/alterar-usuario/${salvarUsuarioDTO.id}`, salvarUsuarioDTO);
     }
 
 

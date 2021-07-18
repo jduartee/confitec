@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\Confitec.Application.csproj": {}
+    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\Confitec.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\Confitec.Application.csproj": {
+    "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\Confitec.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\Confitec.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\Confitec.Application.csproj",
         "projectName": "Confitec.Application",
-        "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\Confitec.Application.csproj",
+        "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\Confitec.Application.csproj",
         "packagesPath": "C:\\Users\\Squadra\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\obj\\",
+        "outputPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

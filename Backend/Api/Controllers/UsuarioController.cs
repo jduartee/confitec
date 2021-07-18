@@ -2,10 +2,7 @@
 using Confitec.Application.Commands;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Api.Controllers
@@ -77,6 +74,20 @@ namespace Api.Controllers
 
             }
             catch (Exception e)
+            {
+                return BadRequest();
+            }
+        }
+
+        [HttpDelete]
+        [Route("deletar-usuario/{id}")]
+        public async Task<ActionResult> DeletarUsuario(int id)
+        {
+            try
+            {
+                return Ok(await _mediator.Send(new DeletarUsuarioCommand(id)));
+            }
+            catch (Exception)
             {
                 return BadRequest();
             }

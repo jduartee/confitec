@@ -14,7 +14,7 @@
         </div>
         <div class="col-3">
             <a href="#" class="btn btn-outline-dark btn-filtro" (click)="obterUsuarios()" style="margin-right: 3px;">Pesquisar&nbsp; <fa-icon [icon]="searchIcon"></fa-icon> </a>
-            <a href="#" class="btn btn-outline-primary btn-filtro" (click)="open(content)">Novo &nbsp; <fa-icon [icon]="addUserIcon"></fa-icon></a>
+            <a href="#" class="btn btn-outline-primary btn-filtro" (click)="open(content, 0)">Novo &nbsp; <fa-icon [icon]="addUserIcon"></fa-icon></a>
         </div>
     </div>
 
@@ -37,7 +37,7 @@
                         <td>{{item.escolaridade}}</td>
                         <td>{{item.dataNascimento | date: 'dd/MM/yyyy'}}</td>
                         <td>
-                            <a href="#" class="btn btn-outline-dark btn-sm" style="margin-right: 3px;">
+                            <a href="#" class="btn btn-outline-dark btn-sm" style="margin-right: 3px;" (click)="open(content, item.id)">
                                 <fa-icon [icon]="editUserIcon"></fa-icon>
                             </a>
                             <a href="#" class="btn btn-outline-danger btn-sm">
@@ -53,5 +53,5 @@
 
 
 <ng-template #content let-modal>
-    <app-salvar-usuario (dismissModal)="onDismissModal()" [listarEscolaridade]="listarEscolaridade"></app-salvar-usuario>
+    <app-salvar-usuario (dismissModal)="onDismissModal()" [listarEscolaridade]="listarEscolaridade" [usuarioId]="usuarioId"></app-salvar-usuario>
 </ng-template>

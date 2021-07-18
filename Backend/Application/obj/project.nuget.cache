@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LwP6sFstvS9TCeB2p25sJq1LfsbpP+91Uogt1YkoQz0/o+MUo3ETiWabbu5JUa2qCbYzsiK4HwoxZ7ymdT1SUw==",
+  "dgSpecHash": "m8INbiQhusamQgirNlFq1dldcuTltaaAhOhIWtxhx/HEsehT9liWr2X7WzDHqhLvUQPWryF77fKTyzsnhgNpkw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Application\\Confitec.Application.csproj",
+  "projectFilePath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Application\\Confitec.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Squadra\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Squadra\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",

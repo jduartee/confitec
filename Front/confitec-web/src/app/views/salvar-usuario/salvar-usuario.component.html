@@ -1,4 +1,4 @@
-<form [formGroup]="usuarioForm">
+<form [formGroup]="usuarioForm" (ngSubmit)="onSubmit()">
     <div class="modal-header">
         <h5 class="modal-title" id="modal-basic-title">Cadastro de Usuario</h5>
         <button type="button" class="close" aria-label="Close" (click)="dismiss()">
@@ -23,10 +23,11 @@
             <div class="col-6">
                 <label>Data de Nasc.</label>
                 <div class="input-group">
-                    <input class="form-control" placeholder="dd-mm-aaaa" name="dp" formControlName="dataNascimento" ngbDatepicker #d="ngbDatepicker">
+                    <input type="date" class="form-control" placeholder="dd/mm/aaaa" name="dp" formControlName="dataNascimento">
+                    <!-- <input class="form-control" placeholder="dd-mm-aaaa" name="dp" formControlName="dataNascimento" ngbDatepicker #d="ngbDatepicker">
                     <div class="input-group-append">
                         <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button"><fa-icon [icon]="calendarIcon"></fa-icon> </button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div class="col-6">
@@ -47,6 +48,6 @@
 
     </div>
     <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" [disabled]="!usuarioForm.valid">Salvar <fa-icon [icon]="checkIcon"></fa-icon></button>
+        <button type="submit" class="btn btn-outline-dark">Salvar <fa-icon [icon]="checkIcon"></fa-icon></button>
     </div>
 </form>

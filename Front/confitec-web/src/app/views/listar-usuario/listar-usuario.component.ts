@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { faSearch, faUserEdit, faUserPlus, faUserTimes } from '@fortawesome/free-solid-svg-icons';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { listarUsuarioDTO } from 'src/app/core/model/usuario/listarUsuarioDTO';
+import { salvarUsuarioDTO } from 'src/app/core/model/usuario/salvarUsuarioDTO';
 import { EscolaridadeService } from 'src/app/core/service/escolaridade.service';
 import { UsuarioService } from 'src/app/core/service/usuario.service';
 
@@ -14,6 +15,8 @@ export class ListarUsuarioComponent implements OnInit {
   nome: string = "";
   escolaridadeId: number = 0;
   lista: Array<listarUsuarioDTO> = [];
+  usuarioId : number = 0;
+
   listarEscolaridade: any;
   closeResult = '';
 
@@ -40,16 +43,17 @@ export class ListarUsuarioComponent implements OnInit {
       this.lista = res;
     });
   }
-  
 
+  open(content: any,id : number) {
 
-  open(content: any) {
+    this.usuarioId = id;
+
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
-  }
+  }  
 
   private getDismissReason(reason: any): string {
     if (reason === ModalDismissReasons.ESC) {
