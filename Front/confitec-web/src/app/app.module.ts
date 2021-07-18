@@ -8,8 +8,7 @@ import { ListarUsuarioComponent } from './views/listar-usuario/listar-usuario.co
 import { SalvarUsuarioComponent } from './views/salvar-usuario/salvar-usuario.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faEdit, faSquare, faUserEdit, faUserTimes } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -24,7 +23,7 @@ import { faEdit, faSquare, faUserEdit, faUserTimes } from '@fortawesome/free-sol
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
-    FontAwesomeModule
+    FontAwesomeModule,
    ],
   providers: [],
   bootstrap: [AppComponent]
