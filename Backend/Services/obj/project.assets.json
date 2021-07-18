@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "FluentValidation/7.5.2": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Concurrent": "4.3.0",
+          "System.ComponentModel.Annotations": "4.4.1",
+          "System.ComponentModel.Primitives": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {}
+        }
+      },
       "MediatR/9.0.0": {
         "type": "package",
         "compile": {
@@ -503,7 +517,7 @@
           "System.Threading.Tasks": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Collections.Concurrent.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Collections.Concurrent.dll": {}
@@ -1559,10 +1573,44 @@
         "runtime": {
           "bin/placeholder/Confitec.Infrastructure.dll": {}
         }
+      },
+      "Confitec.Validation/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Confitec.Application": "1.0.0",
+          "FluentValidation": "7.5.2",
+          "MediatR": "9.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Confitec.Validation.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Confitec.Validation.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "FluentValidation/7.5.2": {
+      "sha512": "AQMyeK9eP0+EKBsBuO6RhAiTmyTC32is6EX+cAMBOSCMvExeohtg3vNM1xUoenpb1mjwZfuoJXLz7QfiC7Bn2A==",
+      "type": "package",
+      "path": "fluentvalidation/7.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentvalidation.7.5.2.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net45/FluentValidation.dll",
+        "lib/net45/FluentValidation.xml",
+        "lib/netstandard1.1/FluentValidation.dll",
+        "lib/netstandard1.1/FluentValidation.xml",
+        "lib/netstandard1.6/FluentValidation.dll",
+        "lib/netstandard1.6/FluentValidation.xml",
+        "lib/netstandard2.0/FluentValidation.dll",
+        "lib/netstandard2.0/FluentValidation.xml"
+      ]
+    },
     "MediatR/9.0.0": {
       "sha512": "8b3UYNxegHVYcJMG2zH8wn+YqxLvXG+eMfj0cMCq/jTW72p6O3PCKMkrIv0mqyxdW7bA4gblsocw7n+/9Akg5g==",
       "type": "package",
@@ -5795,12 +5843,18 @@
       "type": "project",
       "path": "../Infrastructure/Confitec.Infrastructure.csproj",
       "msbuildProject": "../Infrastructure/Confitec.Infrastructure.csproj"
+    },
+    "Confitec.Validation/1.0.0": {
+      "type": "project",
+      "path": "../Validation/Confitec.Validation.csproj",
+      "msbuildProject": "../Validation/Confitec.Validation.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Confitec.Application >= 1.0.0",
       "Confitec.Infrastructure >= 1.0.0",
+      "Confitec.Validation >= 1.0.0",
       "MediatR >= 9.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 9.0.0"
     ]
@@ -5841,6 +5895,9 @@
             },
             "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Infrastructure\\Confitec.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Infrastructure\\Confitec.Infrastructure.csproj"
+            },
+            "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Validation\\Confitec.Validation.csproj": {
+              "projectPath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Validation\\Confitec.Validation.csproj"
             }
           }
         }

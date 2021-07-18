@@ -3,6 +3,7 @@ using Confitec.Application.Commands;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Api.Controllers
@@ -24,10 +25,17 @@ namespace Api.Controllers
         {
             try
             {
-                var result = await _mediator.Send(new CadastrarUsuarioCommand(model.Nome, model.Sobrenome, model.Email, model.DataNascimento, model.EscolaridadeId));
+                var result = await _mediator.Send(new CadastrarUsuarioCommand(model.Nome, model.Sobrenome, model.Email, model.DataNascimento, model.EscolaridadeId)).ConfigureAwait(false);
+
+                if (result.Errors.Any())
+                {
+                    return BadRequest(result.Errors);
+                }
+
+
                 return Ok(result);
             }
-            catch (Exception)
+            catch (Exception e)
             {
                 return BadRequest();
             }

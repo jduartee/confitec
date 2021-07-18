@@ -28,7 +28,7 @@ export class UsuarioService  {
         return this.http.put(`${this.baseUrl}Usuario/alterar-usuario/${salvarUsuarioDTO.id}`, salvarUsuarioDTO);
     }
 
-
-
-
+    deletar(id: number): Observable<any>{
+        return this.http.delete(`${this.baseUrl}Usuario/deletar-usuario/${id}`);
+    }
 }

@@ -146,7 +146,6 @@ C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\obj\Debug\netcoreapp3.1\Confi
 C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\obj\Debug\netcoreapp3.1\Confitec.Api.AssemblyInfoInputs.cache
 C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\obj\Debug\netcoreapp3.1\Confitec.Api.AssemblyInfo.cs
 C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\obj\Debug\netcoreapp3.1\Confitec.Api.csproj.CoreCompileInputs.cache
-C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\obj\Debug\netcoreapp3.1\Confitec.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\obj\Debug\netcoreapp3.1\Confitec.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\obj\Debug\netcoreapp3.1\staticwebassets\Confitec.Api.StaticWebAssets.Manifest.cache
 C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\obj\Debug\netcoreapp3.1\staticwebassets\Confitec.Api.StaticWebAssets.xml
@@ -159,3 +158,6 @@ C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\obj\Debug\netcoreapp3.1\Confi
 C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\bin\Debug\netcoreapp3.1\Confitec.Validation.dll
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Api\bin\Debug\netcoreapp3.1\Confitec.Validation.pdb

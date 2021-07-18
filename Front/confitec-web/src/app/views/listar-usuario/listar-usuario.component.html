@@ -40,7 +40,7 @@
                             <a href="#" class="btn btn-outline-dark btn-sm" style="margin-right: 3px;" (click)="open(content, item.id)">
                                 <fa-icon [icon]="editUserIcon"></fa-icon>
                             </a>
-                            <a href="#" class="btn btn-outline-danger btn-sm" (click)="excluirUsuario()">
+                            <a href="#" class="btn btn-outline-danger btn-sm" (click)="excluirUsuario(item.id)">
                                 <fa-icon [icon]="removeUserIcon"></fa-icon>
                             </a>
                         </td>
@@ -53,5 +53,5 @@
 
 
 <ng-template #content let-modal>
-    <app-salvar-usuario (dismissModal)="onDismissModal()" [listarEscolaridade]="listarEscolaridade" [usuarioId]="usuarioId"></app-salvar-usuario>
+    <app-salvar-usuario (dismissModal)="obterUsuarios()" (dismissModal)="onDismissModal()" [listarEscolaridade]="listarEscolaridade" [usuarioId]="usuarioId"></app-salvar-usuario>
 </ng-template>

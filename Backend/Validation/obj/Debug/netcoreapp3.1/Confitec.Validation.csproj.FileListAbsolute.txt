@@ -1,0 +1,12 @@
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Validation\obj\Debug\netcoreapp3.1\Confitec.Validation.csprojAssemblyReference.cache
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Validation\obj\Debug\netcoreapp3.1\Confitec.Validation.AssemblyInfoInputs.cache
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Validation\obj\Debug\netcoreapp3.1\Confitec.Validation.AssemblyInfo.cs
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Validation\obj\Debug\netcoreapp3.1\Confitec.Validation.csproj.CoreCompileInputs.cache
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Validation\bin\Debug\netcoreapp3.1\Confitec.Validation.deps.json
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Validation\bin\Debug\netcoreapp3.1\Confitec.Validation.dll
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Validation\bin\Debug\netcoreapp3.1\Confitec.Validation.pdb
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Validation\bin\Debug\netcoreapp3.1\Confitec.Application.dll
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Validation\bin\Debug\netcoreapp3.1\Confitec.Application.pdb
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Validation\obj\Debug\netcoreapp3.1\Confitec.Validation.csproj.CopyComplete
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Validation\obj\Debug\netcoreapp3.1\Confitec.Validation.dll
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Validation\obj\Debug\netcoreapp3.1\Confitec.Validation.pdb

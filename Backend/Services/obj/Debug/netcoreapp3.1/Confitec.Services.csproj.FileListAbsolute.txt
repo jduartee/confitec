@@ -30,3 +30,5 @@ C:\Users\Squadra\source\repos\CONFITEC\Backend\Services\obj\Debug\netcoreapp3.1\
 C:\Users\Squadra\source\repos\CONFITEC\Backend\Services\obj\Debug\netcoreapp3.1\Confitec.Services.csproj.CopyComplete
 C:\Users\Squadra\source\repos\CONFITEC\Backend\Services\obj\Debug\netcoreapp3.1\Confitec.Services.dll
 C:\Users\Squadra\source\repos\CONFITEC\Backend\Services\obj\Debug\netcoreapp3.1\Confitec.Services.pdb
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Services\bin\Debug\netcoreapp3.1\Confitec.Validation.dll
+C:\Users\Squadra\source\repos\CONFITEC\Backend\Services\bin\Debug\netcoreapp3.1\Confitec.Validation.pdb

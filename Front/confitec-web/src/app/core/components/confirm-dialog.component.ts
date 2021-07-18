@@ -5,17 +5,14 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   selector: 'ngbd-modal-confirm',
   template: `
   <div class="modal-header">
-    <h4 class="modal-title" id="modal-title">{{header}}</h4>
-    <button type="button" class="close" aria-describedby="modal-title" (click)="modal.dismiss('Cross click')">
-      <span aria-hidden="true">&times;</span>
-    </button>
+    <h4 class="modal-title" id="modal-title">{{header}}</h4>   
   </div>
   <div class="modal-body">
     <p>{{message}}</p>
   </div>
   <div class="modal-footer">
-    <button type="button" class="btn btn-outline-secondary" (click)="modal.dismiss()">Não</button>
-    <button type="button" class="btn btn-primary" (click)="modal.close()">Sim</button>
+    <button type="button" class="btn btn-outline-danger" (click)="modal.dismiss()">Não</button>
+    <button type="button" class="btn btn-outline-primary" (click)="modal.close()">Sim</button>
   </div>
   `
 })

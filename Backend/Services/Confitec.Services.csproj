@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Application\Confitec.Application.csproj" />
     <ProjectReference Include="..\Infrastructure\Confitec.Infrastructure.csproj" />
+    <ProjectReference Include="..\Validation\Confitec.Validation.csproj" />
   </ItemGroup>
 
 </Project>

@@ -10,11 +10,25 @@
         "dependencies": {
           "Confitec.Application": "1.0.0",
           "Confitec.Infrastructure": "1.0.0",
+          "Confitec.Validation": "1.0.0",
           "MediatR": "9.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0"
         },
         "runtime": {
           "Confitec.Services.dll": {}
+        }
+      },
+      "FluentValidation/7.5.2": {
+        "dependencies": {
+          "System.Collections.Concurrent": "4.3.0",
+          "System.ComponentModel.Annotations": "5.0.0",
+          "System.ComponentModel.Primitives": "4.3.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FluentValidation.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.5.2.0"
+          }
         }
       },
       "MediatR/9.0.0": {
@@ -1115,6 +1129,16 @@
         "runtime": {
           "Confitec.Infrastructure.dll": {}
         }
+      },
+      "Confitec.Validation/1.0.0": {
+        "dependencies": {
+          "Confitec.Application": "1.0.0",
+          "FluentValidation": "7.5.2",
+          "MediatR": "9.0.0"
+        },
+        "runtime": {
+          "Confitec.Validation.dll": {}
+        }
       }
     }
   },
@@ -1123,6 +1147,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "FluentValidation/7.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AQMyeK9eP0+EKBsBuO6RhAiTmyTC32is6EX+cAMBOSCMvExeohtg3vNM1xUoenpb1mjwZfuoJXLz7QfiC7Bn2A==",
+      "path": "fluentvalidation/7.5.2",
+      "hashPath": "fluentvalidation.7.5.2.nupkg.sha512"
     },
     "MediatR/9.0.0": {
       "type": "package",
@@ -1814,6 +1845,11 @@
       "sha512": ""
     },
     "Confitec.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Confitec.Validation/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

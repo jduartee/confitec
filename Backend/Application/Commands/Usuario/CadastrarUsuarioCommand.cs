@@ -1,11 +1,12 @@
-﻿using MediatR;
+﻿using Confitec.Application.Configuration;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Confitec.Application.Commands
 {
-    public class CadastrarUsuarioCommand : IRequest<int>
+    public class CadastrarUsuarioCommand : IRequest<Response>
     {
         public CadastrarUsuarioCommand(string nome, string sobrenome, string email, DateTime dataNascimento, int escolaridadeId)
         {

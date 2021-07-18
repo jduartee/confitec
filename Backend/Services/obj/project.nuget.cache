@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZU48jGIxqFZ5M+fn8+vJu8zs2iVj+arAe/f3IIaEEjcXeLKKjKG2zcNkT+N4zKwagLRj/Ob0BylYNG7wII9CYA==",
+  "dgSpecHash": "brIodcieX0r8mDFZSSyUaglR++zS5OH+DbZ0zKqgeQuDQk8JjEVaKxGHFnOmk1vplVrbNMj+RpmwebLy4f439A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Squadra\\source\\repos\\CONFITEC\\Backend\\Services\\Confitec.Services.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Squadra\\.nuget\\packages\\fluentvalidation\\7.5.2\\fluentvalidation.7.5.2.nupkg.sha512",
     "C:\\Users\\Squadra\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\Squadra\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

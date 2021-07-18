@@ -1,9 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { faSearch, faUserEdit, faUserPlus, faUserTimes } from '@fortawesome/free-solid-svg-icons';
 import { ModalDismissReasons, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { AlertDialogComponent } from 'src/app/core/components/alert-dialog';
 import { ConfirmDialogComponent } from 'src/app/core/components/confirm-dialog.component';
+import { NotificationMessage } from 'src/app/core/model/notification-message.model';
 import { listarUsuarioDTO } from 'src/app/core/model/usuario/listarUsuarioDTO';
 import { EscolaridadeService } from 'src/app/core/service/escolaridade.service';
+import { NotificationService } from 'src/app/core/service/notification.service';
 import { UsuarioService } from 'src/app/core/service/usuario.service';
 
 @Component({
@@ -27,10 +30,10 @@ export class ListarUsuarioComponent implements OnInit {
 
   constructor(private usuarioService: UsuarioService, 
               private escolaridadeService: EscolaridadeService, 
-              private modalService: NgbModal) { }
+              private modalService: NgbModal,
+              private notificationService: NotificationService) { }
 
   ngOnInit(): void {
-    
     this.obterUsuarios();    
     
     this.escolaridadeService.listar().subscribe(res => {
@@ -69,25 +72,24 @@ export class ListarUsuarioComponent implements OnInit {
     this.modalService.dismissAll();
   }
 
-  excluirUsuario(){
+  excluirUsuario(id: number){
     
     const modalRef = this.modalService.open(ConfirmDialogComponent);
     modalRef.componentInstance.message = "Tem certeza que deseja excluir este usúario?";
     modalRef.componentInstance.header = "Excluir usúario."
       modalRef.result.then(() => {
-        console.log('test')
-        // this.acaoConquistaService
-        //   .deletarAcaoConquista(acaoConquistaId)
-        //   .subscribe((x) => {
-        //     var indice = this.acaoConquista.indexOf(acaoConquista);
-        //     this.acaoConquista.splice(indice, 1);
 
-        //     this.notificationService.showSuccess(
-        //       new NotificationMessage({
-        //         mensagem: "Ação excluída com sucesso!",
-        //       })
-        //     );
-        //   });
+        this.usuarioService
+          .deletar(id)
+          .subscribe((x) => {
+            
+            this.obterUsuarios();
+
+            const modalRef = this.modalService.open(AlertDialogComponent);
+                  modalRef.componentInstance.message = "Usúario excluido com sucesso.";
+                  modalRef.componentInstance.header = "Atenção."
+
+          });
       });
   }
 

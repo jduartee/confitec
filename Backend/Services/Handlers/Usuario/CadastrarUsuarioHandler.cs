@@ -1,4 +1,5 @@
 ﻿using Confitec.Application.Commands;
+using Confitec.Application.Configuration;
 using Confitec.Domain.Entities;
 using Confitec.Infrastructure.Context;
 using MediatR;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Confitec.Services.Handlers
 {
-    public class CadastrarUsuarioHandler : IRequestHandler<CadastrarUsuarioCommand, int>
+    public class CadastrarUsuarioHandler : IRequestHandler<CadastrarUsuarioCommand, Response>
     {
         private readonly ApplicationDbContext _context;
 
@@ -18,7 +19,7 @@ namespace Confitec.Services.Handlers
             _context = context;
         }
 
-        public async Task<int> Handle(CadastrarUsuarioCommand request, CancellationToken cancellationToken)
+        public async Task<Response> Handle(CadastrarUsuarioCommand request, CancellationToken cancellationToken)
         {
             var escolaridade = await _context.Escolaridades.Where(x => x.EscolaridadeId == request.EscolaridadeId).FirstOrDefaultAsync();
             var usuario = new Usuario(request.Nome, request.Sobrenome, request.Email, request.DataNascimento);
@@ -28,7 +29,7 @@ namespace Confitec.Services.Handlers
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
 
-            return usuario.UsuarioId;
+            return new Response(usuario.UsuarioId);
         }
     }
 }
