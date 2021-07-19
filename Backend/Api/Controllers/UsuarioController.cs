@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("Api/[controller]")]
     public class UsuarioController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -73,11 +73,11 @@ namespace Api.Controllers
 
         [HttpGet()]
         [Route("listar-usuarios")]
-        public async Task<ActionResult> ObterUsuarios(string nomeCompleto)
+        public async Task<ActionResult> ObterUsuarios([FromQuery]ListarUsuarioVM model)
         {
             try
             {
-                var result = await _mediator.Send(new ListarUsuarioCommand(nomeCompleto));
+                var result = await _mediator.Send(new ListarUsuarioCommand(model.NomeCompleto, model.EscolaridadeId));
                 return Ok(result);
 
             }

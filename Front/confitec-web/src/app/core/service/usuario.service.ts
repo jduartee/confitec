@@ -6,7 +6,7 @@ import { listarUsuarioDTO } from "../model/usuario/listarUsuarioDTO";
 
 @Injectable({ providedIn: 'root' })
 export class UsuarioService  {
-    baseUrl = "https://localhost:44307/";
+    baseUrl = "https://localhost:44307/api/";
 
     constructor(
       protected http: HttpClient) {
@@ -16,8 +16,10 @@ export class UsuarioService  {
         return this.http.get<salvarUsuarioDTO>(`${this.baseUrl}Usuario/listar-usuarios/${id}`);
     }
 
-    listar(nome: string): Observable<listarUsuarioDTO[]>{
-        return this.http.get<listarUsuarioDTO[]>(`${this.baseUrl}Usuario/listar-usuarios`);
+    listar(nome: string, escolaridadeId: number): Observable<listarUsuarioDTO[]>{
+        let filtro= "";
+
+        return this.http.get<listarUsuarioDTO[]>(`${this.baseUrl}Usuario/listar-usuarios?NomeCompleto=${nome}&EscolaridadeId=${escolaridadeId}`);
     }
 
     incluir(salvarUsuarioDTO: salvarUsuarioDTO ): Observable<any>{

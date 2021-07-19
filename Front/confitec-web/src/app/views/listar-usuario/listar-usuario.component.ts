@@ -30,8 +30,7 @@ export class ListarUsuarioComponent implements OnInit {
 
   constructor(private usuarioService: UsuarioService, 
               private escolaridadeService: EscolaridadeService, 
-              private modalService: NgbModal,
-              private notificationService: NotificationService) { }
+              private modalService: NgbModal) { }
 
   ngOnInit(): void {
     this.obterUsuarios();    
@@ -42,7 +41,7 @@ export class ListarUsuarioComponent implements OnInit {
   }
 
   obterUsuarios(){
-    this.usuarioService.listar(this.nome).subscribe(res => {
+    this.usuarioService.listar(this.nome, this.escolaridadeId).subscribe(res => {
       this.lista = res;
     });
   }

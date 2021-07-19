@@ -23,11 +23,17 @@ namespace Confitec.Services.Handlers
 
         public async Task<List<UsuarioListaVO>> Handle(ListarUsuarioCommand request, CancellationToken cancellationToken)
         {
-            var query = _context.Usuarios.Include(x => x.Escolaridade);
 
-            if (!string.IsNullOrWhiteSpace(request.NomeCompleto))
+            var nomecompleto = (request.NomeCompleto ?? string.Empty);
+
+
+            var query = _context.Usuarios.Include(x => x.Escolaridade).
+                Where(x => x.Nome.ToLower().Contains(nomecompleto.ToLower()) || x.Sobrenome.ToLower().Contains(nomecompleto.ToLower()));
+
+
+            if (request.EscolaridadeId > 0)
             {
-                query.Where(x => x.Nome.ToLower().Contains(request.NomeCompleto.ToLower()));
+                query = query.Where(x => x.Escolaridade.EscolaridadeId == request.EscolaridadeId);
             }
 
             return await query.Select(x => new UsuarioListaVO

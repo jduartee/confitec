@@ -8,5 +8,6 @@ namespace Confitec.Api.Model
     public class ListarUsuarioVM
     {
         public string NomeCompleto { get; set; }
+        public int EscolaridadeId { get; set; }
     }
 }

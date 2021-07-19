@@ -10,7 +10,7 @@ namespace Confitec.Api.Controllers
 {
 
     [ApiController]
-    [Route("[controller]")]
+    [Route("Api/[controller]")]
     public class EscolaridadeController : ControllerBase
     {
         private readonly IMediator _mediator;
